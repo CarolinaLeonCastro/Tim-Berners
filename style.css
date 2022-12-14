@@ -1,0 +1,79 @@
+/* UTILITIES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+</style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+   background-color: rgb(27, 27, 79);
+   color: #fff;
+   
+   }
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 14px;
+    
+   
+   }
+   .menu li {
+    list-style: none;
+   }
+   
+   
+   
+   .menu li {
+   padding: 5px 14px;
+   
+   }
+
+#buttons {
+    color: #14599D;
+}
+
+/* block image*/
+
+.blockimage {
+    border: 1px solid;
+    margin: 0;
+    border-radius: 3px;
+}
+
+.image {
+    border: 1px solid transparent;
+  
+}
+
+.text-center a{
+    color: #14599D;
+
+    
+}
+
+.facts-list {
+    color: #1A1A1A;
+    font-size: 14px;
+    padding: 20px 0px 0px;
+
+
+}
+
+
+   
