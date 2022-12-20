@@ -1,17 +1,37 @@
 /* UTILITIES */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 </style>
+
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+} 
+*,html {
+    scroll-behavior: auto;
+}
     
-   }
+*::before,*::after{
+box-sizing: border-box;
+}
+
+body, h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: block;
+}
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 200vh;
+    border-radius: 10px solid;
+    
+    background-color: #fafafa;
+    margin: 2px;
+
 }
 
 
@@ -19,61 +39,332 @@ body {
 
 .navbar {
    display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 10px;
+   align-items:center;
+   justify-content: center;
+   padding: 5px;
    background-color: rgb(27, 27, 79);
-   color: #fff;
-   
-   }
-   .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 14px;
+}
+.navbar img{
+    width: 18px;
+    height: 15px;
     
+}
+
+.navbar .logo{
+    color: white;
+    font-size: 20px;
+
+}
    
+
+   .menu {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 0;
+    margin-top: 10px;
+    
    }
    .menu li {
     list-style: none;
+    padding: 3px 8px;
    }
    
-   
-   
-   .menu li {
-   padding: 5px 14px;
-   
-   }
 
-#buttons {
+   
+
+#container{
+    box-sizing: border-box;
+    padding: 20px 20px 20px;
+    border: #ddd 1px solid;
+    margin: 15px;
+    
+}
+ h1 {
+    font-family:'Georgia'serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #1A1A1A;
+    
+    
+ }
+ em {
+    font-style: italic;
+    font-size: 12px;
+ }
+
+ p a{
+    text-decoration: black;
+    font-size: 12px;
     color: #14599D;
+     
+    
+ }
+
+ .info p {
+    font-family: 'Georgia' ;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
+#btn button{
+    color: #14599D;
+    font: 16px;
+    margin: 5px 0px;
+    border: #ddd 1px solid;
 }
 
 /* block image*/
 
 .blockimage {
-    border: 1px solid;
-    margin: 0;
-    border-radius: 3px;
-}
 
-.image {
-    border: 1px solid transparent;
-  
-}
-
-.text-center a{
-    color: #14599D;
-
+width: 250px;
+border: #ddd 1px solid;
+height: 310px;
     
 }
 
-.facts-list {
+
+.image1 {
+
+    display:flex;
+    padding: 10px;
+    
+
+}
+.image1 img {
+
+    height: 280px;
+}
+
+.image p {
+    padding: 8px;  
+    margin: -8px;
+    font-size: 10px;
+    text-align:left;
+    text-decoration: none;
     color: #1A1A1A;
-    font-size: 14px;
-    padding: 20px 0px 0px;
+    
+}
 
-
+.text-center {
+    text-align: center;
+    padding: 10px 0px;
+}
+.text-center a {
+    color: #14599D;
+    text-decoration: none;
 }
 
 
-   
+.facts-list {
+    color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 14px;
+    padding: 24px 0;
+    margin-bottom: auto;
+    
+}
+
+.fact-item a{
+    text-decoration: none;
+    color: #14599D;
+
+}
+
+    
+
+.btnimg button {
+    color: #14599d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    font-size: 12px;
+    font-weight: bold;
+    border: #ddd 1px solid;
+    border-radius: 8px;
+    width: max-content;
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+
+button {
+    background: none;
+    
+}
+
+.text {
+    margin: 18px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.text p{
+    font-family: 'Georgia' serif;
+    font-size: 18px;
+      
+}
+
+
+.text a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #14599D;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+        .navbar {
+        
+            padding: 20px;
+         }
+         .navbar img{
+             width: 35px;
+             height: 30px;
+             
+         }
+         
+         .navbar .logo{
+             font-size: 30px;
+         
+         }
+         .menu {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            margin-top: 15px;
+            font-size: 18px;
+           
+            
+           }
+           .menu li {
+            padding: 10px 15px;
+           }
+
+           #container{
+           
+            border: #ddd 2px solid;
+            margin: 30px; 
+            }
+           
+         h1 {
+            font-size: 3em;
+            
+            
+            
+         }
+         em {
+            
+            font-size: 20px;
+         }
+        
+         p a{
+           
+            font-size: 20px;
+        
+             
+            
+         }
+         .info p {
+            
+            font-size: 25px;
+            
+        }
+        
+        
+        #btn button{
+           
+            font: 20px;
+            margin: 20px 0px;
+            border: #ddd 2px solid;
+        } 
+        
+        .blockimage {
+
+            width: 450px;
+            border: #ddd 2px solid;
+            height: 520px;
+            
+                
+            }
+            
+            
+            .image1 {
+            
+                display:flex;
+                padding: 25px;
+                
+            
+            }
+            .image1 img {
+            
+                height: 450px;
+                width: 400px;
+            }
+            
+            .image p {
+                padding: 12px;  
+                margin: -12px;
+                font-size: 15px;
+                
+               
+                
+            }
+
+            .text-center {
+                
+                padding: 15px 0px;
+                font-size: 18px;
+            }
+           
+            
+            .facts-list {
+               
+                gap: 18px;
+                font-size: 20px;
+                padding: 30px 0;
+                
+            }
+            
+    
+                
+            
+            .btnimg button {
+                height: 45px;
+                font-size: 15px;
+                border: #ddd 2px solid;
+                border-radius: 8px;
+                padding: 0 30px;
+         
+            
+            }
+            
+            button {
+                background: none;
+                
+            }
+            
+            .text {
+                margin: 25px;
+                line-height: 35px;
+            }
+            
+            .text p{
+                font-size: 22px;
+                  
+            }
+            
+            
+            .text a{
+                font-size: 22px;
+               
+            }
+                  
+    }
